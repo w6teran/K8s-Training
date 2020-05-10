@@ -1,4 +1,4 @@
-# PANW MCA Cloud & Containers Training Session #4
+# PANW LATAM Cloud & Containers Training Session #4
 
 This is the repository for the Kubernetes Training part of Cloud & Containers Training
 
