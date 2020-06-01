@@ -18,6 +18,6 @@ Lab Guides:
 10. Volumes Lab
 
 
-You can download all the material from Gitub to your own PC.
+You can download all the material from Github to your own PC.
 
 Let's have some fun!!! Go Palo Alto Networks!!!
