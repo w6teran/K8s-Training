@@ -1,0 +1,45 @@
+#pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-demo
+  labels:
+    environment: production
+    app: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+    
+#pod-node-selector.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-nodeport
+spec:
+ type: NodePort
+ ports:
+ - port: 8080
+   targetPort: 80
+   nodePort: 30111
+ selector:
+   app: nginx
+
+
+# cluster-ip-service.yaml
+apiVersion: v1
+kind: Service 
+metadata: 
+     name: nginx 
+spec: 
+   ports: 
+   - port: 8080 
+     targetPort: 80 
+   selector: 
+      app: nginx 
+      
+      
